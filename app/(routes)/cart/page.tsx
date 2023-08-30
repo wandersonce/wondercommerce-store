@@ -4,6 +4,7 @@ import Container from '@/components/ui/Container';
 import useCart from '@/hooks/use-cart';
 import {useState, useEffect} from 'react';
 import CartItem from './components/CartItem';
+import Summary from './components/Summary';
 
 export default function CartPage() {
   const [isMounted, setIsMounted] = useState(false);
@@ -31,6 +32,7 @@ export default function CartPage() {
                 ))}
               </ul>
             </div>
+            <Summary />
           </div>
         </div>
       </Container>

@@ -28,6 +28,7 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(({
       `,
       className
     )}
+    disabled={disabled}
       {...props}
     >
       {children}

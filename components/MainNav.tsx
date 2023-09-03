@@ -21,7 +21,7 @@ export default function MainNav({data}: MainNavProps) {
   return (
     <nav className='mx-6 flex items-center space-x-4 lg:space-x-6'>
       {routes.map((route) => (
-        <Link key={route.href} href={route.href} className={cn("text-sm font-medium transition-colors hover:text-black", route.active? "text-black dark:text-white" : "text-muted-foreground")}>
+        <Link key={route.href} href={route.href} className={cn("text-sm font-medium transition-colors hover:text-black", route.active? "text-black dark:text-red-500" : "text-muted-foreground")}>
           {route.label}
         </Link>
       ))}
